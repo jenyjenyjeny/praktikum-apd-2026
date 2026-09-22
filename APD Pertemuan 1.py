@@ -1,4 +1,4 @@
-print("ini mau saya push")
+# print("ini mau saya push")
 
 
 # #integer
