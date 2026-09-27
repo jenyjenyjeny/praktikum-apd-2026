@@ -25,26 +25,26 @@ if nama == "Jeny Najla Ariyani" and nim == "46":
     pilihan = input("\nWe would to like know which one is ur fayyvorite plan(et) [1/2/3/4]: ")
     if pilihan == "1":
         paket = ("Orbit Plan(et)")
-        biaya_admin = 0.01
+        persen_admin = 0.01
         fitur = ("Free access to All Popular Songs")
     elif pilihan == "2":
         paket = ("Nebula Plan(et)")
-        biaya_admin = 0.03
+        persen_admin = 0.03
         fitur = ("Free access to All Premium Songs and Playlist Customs")
     elif pilihan == "3":
         paket = ("Galaxy Plan(et)")
-        biaya_admin = 0.05
+        persen_admin = 0.05
         fitur = ("Free access to All Premium Songs, Playlist Customs, and Offline Mode")
     elif pilihan == "4":
         paket = ("Su-su-supernova Plan(et)")
-        biaya_admin = 0.07
+        persen_admin = 0.07
         fitur = ("Free access to All Featured Songs, Playlist Customs, Offline Mode, and Exclusive Artist Content")
     else:
         print("\nInvalid choice. Please select a valid plan(et).")
 
     if paket != "":
-        total_biaya = int(biaya_langganan * biaya_admin)
-        total_bayar = biaya_langganan + total_biaya
+        biaya_admin = int(biaya_langganan * persen_admin)
+        total_bayar = biaya_langganan + biaya_admin
 
         print("\n📃 Angkasa Payment Details:")
 
@@ -52,7 +52,7 @@ if nama == "Jeny Najla Ariyani" and nim == "46":
         print("Selected Plan(et):", paket)
         print("Features Included:", fitur)
         print(f"Subscription Fee: Rp {biaya_langganan:,}".replace(",", "."))
-        print(f"Admin Fee: Rp {total_biaya:,}".replace(",", "."))
+        print(f"Admin Fee: Rp {biaya_admin:,}".replace(",", "."))
         print(f"Total Payment: Rp {total_bayar:,}".replace(",", ".")) 
         
         response = input("\nDo you want to proceed with the payment? (yes/no): ")
